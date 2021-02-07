@@ -1,0 +1,90 @@
+{
+  "data": {
+    "kind": "youtube#searchListResponse",
+    "etag": "zlET0FcqPDQWaCgAGfKZCGwJybM",
+    "nextPageToken": "CAUQAA",
+    "regionCode": "IN",
+    "pageInfo": {
+      "totalResults": 1000000,
+      "resultsPerPage": 5
+    },
+    "items": [
+      {
+        "kind": "youtube#searchResult",
+        "etag": "cJHQhF-WibREscwo9bN4JSdmA3Y",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "AETFvQonfV8"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "UBnncVMlhGob8jm0u6K5k5kkxtE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "wOa-FsI3KRI"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "aA6lSYbiEoab_j5AaLeqvhKwvzE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "uCLwZgSrORE"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "Z4nGa7w19s3-VwxecMFe7VAwHfE",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "HH_a6aRO1TE"
+        }
+      },
+      {
+        "kind": "youtube#searchResult",
+        "etag": "0Tglg4bSayRrtDe_Hw6KsCfuEeo",
+        "id": {
+          "kind": "youtube#video",
+          "videoId": "Af49v6rUXmQ"
+        }
+      }
+    ]
+  },
+  "status": 200,
+  "statusText": "",
+  "headers": {
+    "cache-control": "private",
+    "content-encoding": "gzip",
+    "content-length": "415",
+    "content-type": "application/json; charset=UTF-8",
+    "date": "Sun, 07 Feb 2021 11:16:58 GMT",
+    "server": "scaffolding on HTTPServer2",
+    "vary": "Origin, X-Origin, Referer"
+  },
+  "config": {
+    "url": "./search",
+    "method": "get",
+    "headers": {
+      "Accept": "application/json, text/plain, */*"
+    },
+    "params": {
+      "maxResults": 5,
+      "key": "AIzaSyBePx-FRH03DefIzIVrDi1L9NHCT7KkWmY",
+      "q": "hanuman"
+    },
+    "baseURL": "https://www.googleapis.com/youtube/v3/",
+    "transformRequest": [
+      null
+    ],
+    "transformResponse": [
+      null
+    ],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1
+  },
+  "request": {}
+}

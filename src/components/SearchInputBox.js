@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { SearchBarContainer, SearchBar, Field, Label, Input  } from "./SearchInputBox.style";
+import { SearchBarContainer, SearchBar, Label, Input, Button, InputContainer  } from "./SearchInputBox.style";
 import { SEARCH_CONSTANTS } from "../constants";
 
 const SearchInputBox = ( {handleSubmit}) => {
@@ -12,7 +12,7 @@ const SearchInputBox = ( {handleSubmit}) => {
   return(
     <SearchBarContainer>
       <SearchBar onSubmit={onSubmit}>
-        <Field>
+        <div>
           <Label 
             htmlFor="search-box" 
             data-testid="search-box-label"
@@ -20,15 +20,18 @@ const SearchInputBox = ( {handleSubmit}) => {
               {SEARCH_CONSTANTS.LABEL}
           </Label>
           <br/>
-          <Input
-            data-testid="search-box-input"
-            name="search-box"
-            type="text"
-            placeholder={SEARCH_CONSTANTS.PLACEHOLDER}
-            value={searchText}
-            onChange={(event) => setSearchText(event.target.value)}
-          />
-        </Field>
+          <InputContainer>
+            <Input
+              data-testid="search-box-input"
+              name="search-box"
+              type="text"
+              placeholder={SEARCH_CONSTANTS.PLACEHOLDER}
+              value={searchText}
+              onChange={(event) => setSearchText(event.target.value)}
+            />
+            <Button> Search </Button>
+          </InputContainer>
+        </div>
       </SearchBar>
     </SearchBarContainer>
   )

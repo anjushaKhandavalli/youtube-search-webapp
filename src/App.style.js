@@ -5,4 +5,5 @@ export const AppContainer = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 20px;
+  background-color: rgb(230, 230, 230);
 `;
