@@ -13,18 +13,19 @@ exports[`SearchInputBox should render the search input box with label and input 
       >
         <label
           class="sc-hKgILt ctfbPn"
-          data-test-id="search-box-label"
+          data-testid="search-box-label"
           for="search-box"
         >
           Search for videos via keywords:
         </label>
         <br />
         <input
-          class="sc-eCssSg dflvmJ"
-          data-test-id="search-box-input"
+          class="sc-eCssSg eykWHr"
+          data-testid="search-box-input"
           name="search-box"
-          placeholder=" Ex: dogs,cars etc.."
+          placeholder="Ex: dogs,cars etc.."
           type="text"
+          value=""
         />
       </div>
     </form>
