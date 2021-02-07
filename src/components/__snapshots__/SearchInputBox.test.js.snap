@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchInputBox should render the search input box with label and input box 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ hSRzZU"
+  >
+    <form
+      class="sc-gsTCUz fOtSmi"
+    >
+      <div
+        class="sc-dlfnbm eFXyir"
+      >
+        <label
+          class="sc-hKgILt ctfbPn"
+          data-test-id="search-box-label"
+          for="search-box"
+        >
+          Search for videos via keywords:
+        </label>
+        <br />
+        <input
+          class="sc-eCssSg dflvmJ"
+          data-test-id="search-box-input"
+          name="search-box"
+          placeholder=" Ex: dogs,cars etc.."
+          type="text"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+`;
