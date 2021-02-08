@@ -20,7 +20,7 @@ describe('App', () => {
     fireEvent.submit(searchInput);
 
     expect(youtubeApi.get).toHaveBeenCalledTimes(1);
-    expect(youtubeApi.get).toHaveBeenCalledWith("./search", {params: {q: "sampleText", pageToken:''}});
+    expect(youtubeApi.get).toHaveBeenCalledWith("./search", {params: {q: "sampleText"}});
   })
 
   it('should render cat related videos while searching for cat',async() => {

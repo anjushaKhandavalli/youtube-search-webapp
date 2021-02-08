@@ -2,24 +2,24 @@ import React, {useState} from 'react';
 import { AppContainer } from './App.style'
 import SearchInputBox from './components/SearchInputBox';
 import VideoList from './components/VideoList';
-import youtubeApi from './services/youtubeApi';
+import fetchVideos from './services/fetchVideos';
 // import { response } from './searchApiResponsePartSnippet';
 
 const App = () => {
   const [videos, setVideos] = useState([]);
   const [nextPageToken, setNextPageToken] = useState('');
+  const [searchText, setSearchText] = useState('');
 
-  const searchVideosFor = async (searchText) => {
-    await youtubeApi.get('./search', {
-      params: {
-        q: searchText,
-        pageToken: nextPageToken
-      }
-    })
+  const searchVideosFor = async (keyword) => {
+    console.log("videos searchVideosFor before apicall",videos);
+    const params = {
+      q: keyword
+    }
+    await fetchVideos(params)
     .then((response) => {
-      console.log("response",response)
-      setVideos([...videos,...response.data.items]);
+      setVideos(response.data.items);
       setNextPageToken(response.data.nextPageToken);
+      setSearchText(keyword);
     })
     .catch((error) => {
       console.log("error",error?.response?.data);
@@ -27,10 +27,25 @@ const App = () => {
     // setVideos(response.data.items);
   }
 
+  const fetchMoreVideos = async() => {
+    const params = {
+      q: searchText,
+      pageToken: nextPageToken,
+    }
+    await fetchVideos(params)
+    .then((response) => {
+      setVideos([...videos,...response.data.items]);
+      setNextPageToken(response.data.nextPageToken);
+    })
+    .catch((error) => {
+      console.log("error",error?.response?.data);
+    })
+  }
+
   return (
     <AppContainer>
       <SearchInputBox handleSubmit={searchVideosFor}/>
-      <VideoList videos={videos} fetchMoreVideos={searchVideosFor}/>
+      <VideoList videos={videos} fetchMoreVideos={fetchMoreVideos}/>
     </AppContainer>
   );
 }

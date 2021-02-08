@@ -31,7 +31,7 @@ exports[`SearchInputBox should render the search input box with label and input 
           <button
             class="sc-eCssSg dBXRyi"
           >
-             Search 
+            Search
           </button>
         </div>
       </div>

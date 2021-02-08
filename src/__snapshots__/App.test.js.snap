@@ -34,7 +34,7 @@ exports[`App should render cat related videos while searching for cat 1`] = `
             <button
               class="sc-jSgupP bwGSVv"
             >
-               Search 
+              Search
             </button>
           </div>
         </div>
