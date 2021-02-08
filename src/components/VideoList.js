@@ -15,7 +15,7 @@ return (
         dataLength={videos.length}
         next={fetchMoreVideos}
         hasMore={true}
-        loader={<h4>Loading...</h4>}
+        loader={videos.length === 0 ? null : <h4>Loading...</h4>}
       >
         {renderVideos}
       </InfiniteScroll>

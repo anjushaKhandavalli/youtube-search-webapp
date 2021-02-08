@@ -4,6 +4,7 @@ import VideoList from './VideoList';
 
 
 describe("videoList", () => {
+  const mockFetchMoreVideos = jest.fn();
   const mockVideos = [
     {
       id: {
@@ -37,9 +38,16 @@ describe("videoList", () => {
     }
   ]
   it("should render the videolist", () => {
-    const {container, getByTestId } = render(<VideoList videos={mockVideos}/>)
+    const {container, getByTestId } = render(<VideoList videos={mockVideos} fetchMoreVideos={mockFetchMoreVideos}/>)
 
     expect(container).toMatchSnapshot();
     expect(getByTestId('video-list')).toBeDefined();
+  })
+
+  it.only("should not render loading text when there are no videos", () => {
+    const { queryByText } = render(<VideoList videos={[]} fetchMoreVideos={mockFetchMoreVideos}/>)
+
+    expect(queryByText("Loading...")).not.toBeInTheDocument;
+
   })
 })
