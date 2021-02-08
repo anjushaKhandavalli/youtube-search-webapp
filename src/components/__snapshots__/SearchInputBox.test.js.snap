@@ -3,30 +3,37 @@
 exports[`SearchInputBox should render the search input box with label and input box 1`] = `
 <div>
   <div
-    class="sc-bdfBwQ hSRzZU"
+    class="sc-bdfBwQ hSckpy"
   >
     <form
       class="sc-gsTCUz fOtSmi"
     >
-      <div
-        class="sc-dlfnbm eFXyir"
-      >
+      <div>
         <label
-          class="sc-hKgILt ctfbPn"
+          class="sc-dlfnbm koWLPh"
           data-testid="search-box-label"
           for="search-box"
         >
           Search for videos via keywords:
         </label>
         <br />
-        <input
-          class="sc-eCssSg eykWHr"
-          data-testid="search-box-input"
-          name="search-box"
-          placeholder="Ex: dogs,cars etc.."
-          type="text"
-          value=""
-        />
+        <div
+          class="sc-jSgupP iaInnZ"
+        >
+          <input
+            class="sc-hKgILt kFahnm"
+            data-testid="search-box-input"
+            name="search-box"
+            placeholder="Ex: dogs,cars etc.."
+            type="text"
+            value=""
+          />
+          <button
+            class="sc-eCssSg dBXRyi"
+          >
+             Search 
+          </button>
+        </div>
       </div>
     </form>
   </div>
