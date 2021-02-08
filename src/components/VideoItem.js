@@ -3,7 +3,7 @@ import { VideoItemContainer, VideoInfo, Thumbnail, Title, Description } from './
 
 const VideoItem = ({video}) => {
   return (
-    <VideoItemContainer>
+    <VideoItemContainer data-testid="video-item">
         <Thumbnail data-testid="thumbnail" src={video.snippet.thumbnails.medium.url} alt={video.snippet.description}/>
         <VideoInfo>
             <Title data-testid="title">{video.snippet.title}</Title>

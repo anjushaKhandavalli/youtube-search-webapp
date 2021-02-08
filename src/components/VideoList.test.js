@@ -8,11 +8,11 @@ describe("videoList", () => {
     {
       id: {
         kind: "youtube#video",
-        videoId: "video_1"
+        videoId: "cat_1"
       },
       snippet: {
-        title: "video_1 title",
-        description: "description about the video_1",
+        title: "cat_1 video title",
+        description: "description about the cat_1",
         thumbnails: {
           medium : {
             url: "https://i.ytimg.com/vi/AETFvQonfV8/default.jpg",
@@ -23,11 +23,11 @@ describe("videoList", () => {
     {
       id: {
         kind: "youtube#video2",
-        videoId: "video_2"
+        videoId: "cat_2"
       },
       snippet: {
-        title: "video_2 title",
-        description: "description about the video_2",
+        title: "cat_2 video title",
+        description: "description about the cat_2",
         thumbnails: {
           medium : {
             url: "https://i.ytimg.com/vi/AETFvQoabc/default.jpg",

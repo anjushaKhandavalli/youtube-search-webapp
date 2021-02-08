@@ -4,6 +4,7 @@ exports[`VideoItem should render the video item with thumbnail, title and descri
 <div>
   <div
     class="sc-bdfBwQ jwCXbJ"
+    data-testid="video-item"
   >
     <img
       alt="description about the video"

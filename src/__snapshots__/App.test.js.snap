@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should render cat related videos while searching for cat 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ dQmyfS"
+  >
+    <div
+      class="sc-gsTCUz envuHy"
+    >
+      <form
+        class="sc-dlfnbm bAyFQJ"
+      >
+        <div>
+          <label
+            class="sc-hKgILt ctfbPn"
+            data-testid="search-box-label"
+            for="search-box"
+          >
+            Search for videos via keywords:
+          </label>
+          <br />
+          <div
+            class="sc-gKsewC knLZKI"
+          >
+            <input
+              class="sc-eCssSg eJznzd"
+              data-testid="search-box-input"
+              name="search-box"
+              placeholder="Ex: dogs,cars etc.."
+              type="text"
+              value="cat"
+            />
+            <button
+              class="sc-jSgupP bwGSVv"
+            >
+               Search 
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div
+      class="sc-iqHYGH ebMglc"
+      data-testid="video-list"
+    >
+      <div
+        class="sc-iBPRYJ dkkhND"
+        data-testid="video-item"
+      >
+        <img
+          alt="description about the persian"
+          class="sc-fubCfw faIHZd"
+          data-testid="thumbnail"
+          src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
+        />
+        <div
+          class="sc-pFZIQ SbnXi"
+        >
+          <h2
+            class="sc-jrAGrp fjjYoG"
+            data-testid="title"
+          >
+            persian cat
+          </h2>
+          <h4
+            class="sc-kEjbxe irossh"
+            data-testid="description"
+          >
+            description about the persian
+          </h4>
+        </div>
+      </div>
+      <div
+        class="sc-iBPRYJ dkkhND"
+        data-testid="video-item"
+      >
+        <img
+          alt="description about the bengal cat"
+          class="sc-fubCfw faIHZd"
+          data-testid="thumbnail"
+          src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
+        />
+        <div
+          class="sc-pFZIQ SbnXi"
+        >
+          <h2
+            class="sc-jrAGrp fjjYoG"
+            data-testid="title"
+          >
+            bengal cat
+          </h2>
+          <h4
+            class="sc-kEjbxe irossh"
+            data-testid="description"
+          >
+            description about the bengal cat
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
