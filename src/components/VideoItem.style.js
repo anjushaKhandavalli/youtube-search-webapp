@@ -23,5 +23,11 @@ export const Title = styled.h2`
 `;
 
 export const Description = styled.h4`
+`;
 
+export const VideoListContainer = styled.div`
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

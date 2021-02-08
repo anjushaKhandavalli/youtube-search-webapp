@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`videoList should render the videolist 1`] = `
+<div>
+  <div
+    class="sc-jSgupP cQxPOd"
+    data-testid="video-list"
+  >
+    <div
+      class="sc-bdfBwQ jwCXbJ"
+    >
+      <img
+        alt="description about the video_1"
+        class="sc-gsTCUz dLvDma"
+        data-testid="thumbnail"
+        src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
+      />
+      <div
+        class="sc-dlfnbm jxTFsF"
+      >
+        <h2
+          class="sc-hKgILt ksesVL"
+          data-testid="title"
+        >
+          video_1 title
+        </h2>
+        <h4
+          class="sc-eCssSg gqHjlA"
+          data-testid="description"
+        >
+          description about the video_1
+        </h4>
+      </div>
+    </div>
+    <div
+      class="sc-bdfBwQ jwCXbJ"
+    >
+      <img
+        alt="description about the video_2"
+        class="sc-gsTCUz dLvDma"
+        data-testid="thumbnail"
+        src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
+      />
+      <div
+        class="sc-dlfnbm jxTFsF"
+      >
+        <h2
+          class="sc-hKgILt ksesVL"
+          data-testid="title"
+        >
+          video_2 title
+        </h2>
+        <h4
+          class="sc-eCssSg gqHjlA"
+          data-testid="description"
+        >
+          description about the video_2
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -3,7 +3,7 @@ import { AppContainer } from './App.style'
 import SearchInputBox from './components/SearchInputBox';
 import VideoList from './components/VideoList';
 import youtubeApi from './services/youtubeApi';
-import { response } from './searchApiResponsePartSnippet';
+// import { response } from './searchApiResponsePartSnippet';
 
 const App = () => {
   const [videos, setVideos] = useState([]);

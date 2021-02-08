@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoItem should render the video item with thumbnail, title and description 1`] = `
+<div>
+  <div
+    class="sc-bdfBwQ jwCXbJ"
+  >
+    <img
+      alt="description about the video"
+      class="sc-gsTCUz dLvDma"
+      data-testid="thumbnail"
+      src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
+    />
+    <div
+      class="sc-dlfnbm jxTFsF"
+    >
+      <h2
+        class="sc-hKgILt ksesVL"
+        data-testid="title"
+      >
+        video title
+      </h2>
+      <h4
+        class="sc-eCssSg gqHjlA"
+        data-testid="description"
+      >
+        description about the video
+      </h4>
+    </div>
+  </div>
+</div>
+`;
