@@ -20,12 +20,13 @@ describe('App', () => {
     fireEvent.submit(searchInput);
 
     expect(youtubeApi.get).toHaveBeenCalledTimes(1);
-    expect(youtubeApi.get).toHaveBeenCalledWith("./search", {params: {q: "sampleText"}});
+    expect(youtubeApi.get).toHaveBeenCalledWith("./search", {params: {q: "sampleText", pageToken:''}});
   })
 
   it('should render cat related videos while searching for cat',async() => {
-    const mockVideos = {
+    const mockResponse = {
       data: {
+        nextPageToken: "CAUQAA",
         items: [
           {
             id: {
@@ -60,7 +61,7 @@ describe('App', () => {
         ] 
       }
     }
-    jest.spyOn(youtubeApi, 'get').mockResolvedValue(mockVideos);
+    jest.spyOn(youtubeApi, 'get').mockResolvedValue(mockResponse);
     const { container, getAllByTestId, getByTestId, rerender } = render(<App/>)
 
     const searchInput = getByTestId('search-box-input');

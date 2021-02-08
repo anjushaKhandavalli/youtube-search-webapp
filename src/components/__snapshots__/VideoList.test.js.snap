@@ -7,57 +7,66 @@ exports[`videoList should render the videolist 1`] = `
     data-testid="video-list"
   >
     <div
-      class="sc-bdfBwQ jwCXbJ"
-      data-testid="video-item"
+      class="infinite-scroll-component__outerdiv"
     >
-      <img
-        alt="description about the cat_1"
-        class="sc-gsTCUz dLvDma"
-        data-testid="thumbnail"
-        src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
-      />
       <div
-        class="sc-dlfnbm jxTFsF"
+        class="infinite-scroll-component "
+        style="height: auto; overflow: auto;"
       >
-        <h2
-          class="sc-hKgILt ksesVL"
-          data-testid="title"
+        <div
+          class="sc-bdfBwQ jwCXbJ"
+          data-testid="video-item"
         >
-          cat_1 video title
-        </h2>
-        <h4
-          class="sc-eCssSg gqHjlA"
-          data-testid="description"
+          <img
+            alt="description about the cat_1"
+            class="sc-gsTCUz dLvDma"
+            data-testid="thumbnail"
+            src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
+          />
+          <div
+            class="sc-dlfnbm jxTFsF"
+          >
+            <h2
+              class="sc-hKgILt ksesVL"
+              data-testid="title"
+            >
+              cat_1 video title
+            </h2>
+            <h4
+              class="sc-eCssSg gqHjlA"
+              data-testid="description"
+            >
+              description about the cat_1
+            </h4>
+          </div>
+        </div>
+        <div
+          class="sc-bdfBwQ jwCXbJ"
+          data-testid="video-item"
         >
-          description about the cat_1
-        </h4>
-      </div>
-    </div>
-    <div
-      class="sc-bdfBwQ jwCXbJ"
-      data-testid="video-item"
-    >
-      <img
-        alt="description about the cat_2"
-        class="sc-gsTCUz dLvDma"
-        data-testid="thumbnail"
-        src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
-      />
-      <div
-        class="sc-dlfnbm jxTFsF"
-      >
-        <h2
-          class="sc-hKgILt ksesVL"
-          data-testid="title"
-        >
-          cat_2 video title
-        </h2>
-        <h4
-          class="sc-eCssSg gqHjlA"
-          data-testid="description"
-        >
-          description about the cat_2
-        </h4>
+          <img
+            alt="description about the cat_2"
+            class="sc-gsTCUz dLvDma"
+            data-testid="thumbnail"
+            src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
+          />
+          <div
+            class="sc-dlfnbm jxTFsF"
+          >
+            <h2
+              class="sc-hKgILt ksesVL"
+              data-testid="title"
+            >
+              cat_2 video title
+            </h2>
+            <h4
+              class="sc-eCssSg gqHjlA"
+              data-testid="description"
+            >
+              description about the cat_2
+            </h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>

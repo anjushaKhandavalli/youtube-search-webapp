@@ -45,57 +45,66 @@ exports[`App should render cat related videos while searching for cat 1`] = `
       data-testid="video-list"
     >
       <div
-        class="sc-iBPRYJ dkkhND"
-        data-testid="video-item"
+        class="infinite-scroll-component__outerdiv"
       >
-        <img
-          alt="description about the persian"
-          class="sc-fubCfw faIHZd"
-          data-testid="thumbnail"
-          src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
-        />
         <div
-          class="sc-pFZIQ SbnXi"
+          class="infinite-scroll-component "
+          style="height: auto; overflow: auto;"
         >
-          <h2
-            class="sc-jrAGrp fjjYoG"
-            data-testid="title"
+          <div
+            class="sc-iBPRYJ dkkhND"
+            data-testid="video-item"
           >
-            persian cat
-          </h2>
-          <h4
-            class="sc-kEjbxe irossh"
-            data-testid="description"
+            <img
+              alt="description about the persian"
+              class="sc-fubCfw faIHZd"
+              data-testid="thumbnail"
+              src="https://i.ytimg.com/vi/AETFvQonfV8/default.jpg"
+            />
+            <div
+              class="sc-pFZIQ SbnXi"
+            >
+              <h2
+                class="sc-jrAGrp fjjYoG"
+                data-testid="title"
+              >
+                persian cat
+              </h2>
+              <h4
+                class="sc-kEjbxe irossh"
+                data-testid="description"
+              >
+                description about the persian
+              </h4>
+            </div>
+          </div>
+          <div
+            class="sc-iBPRYJ dkkhND"
+            data-testid="video-item"
           >
-            description about the persian
-          </h4>
-        </div>
-      </div>
-      <div
-        class="sc-iBPRYJ dkkhND"
-        data-testid="video-item"
-      >
-        <img
-          alt="description about the bengal cat"
-          class="sc-fubCfw faIHZd"
-          data-testid="thumbnail"
-          src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
-        />
-        <div
-          class="sc-pFZIQ SbnXi"
-        >
-          <h2
-            class="sc-jrAGrp fjjYoG"
-            data-testid="title"
-          >
-            bengal cat
-          </h2>
-          <h4
-            class="sc-kEjbxe irossh"
-            data-testid="description"
-          >
-            description about the bengal cat
-          </h4>
+            <img
+              alt="description about the bengal cat"
+              class="sc-fubCfw faIHZd"
+              data-testid="thumbnail"
+              src="https://i.ytimg.com/vi/AETFvQoabc/default.jpg"
+            />
+            <div
+              class="sc-pFZIQ SbnXi"
+            >
+              <h2
+                class="sc-jrAGrp fjjYoG"
+                data-testid="title"
+              >
+                bengal cat
+              </h2>
+              <h4
+                class="sc-kEjbxe irossh"
+                data-testid="description"
+              >
+                description about the bengal cat
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
     </div>

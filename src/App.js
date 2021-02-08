@@ -7,24 +7,30 @@ import youtubeApi from './services/youtubeApi';
 
 const App = () => {
   const [videos, setVideos] = useState([]);
+  const [nextPageToken, setNextPageToken] = useState('');
+
   const searchVideosFor = async (searchText) => {
     await youtubeApi.get('./search', {
       params: {
-        q: searchText
+        q: searchText,
+        pageToken: nextPageToken
       }
     })
     .then((response) => {
-      setVideos(response.data.items);
+      console.log("response",response)
+      setVideos([...videos,...response.data.items]);
+      setNextPageToken(response.data.nextPageToken);
     })
     .catch((err) => {
       console.log(err);
     })
     // setVideos(response.data.items);
   }
+
   return (
     <AppContainer>
       <SearchInputBox handleSubmit={searchVideosFor}/>
-      <VideoList videos={videos}/>
+      <VideoList videos={videos} fetchMoreVideos={searchVideosFor}/>
     </AppContainer>
   );
 }
