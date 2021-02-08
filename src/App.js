@@ -21,8 +21,8 @@ const App = () => {
       setVideos([...videos,...response.data.items]);
       setNextPageToken(response.data.nextPageToken);
     })
-    .catch((err) => {
-      console.log(err);
+    .catch((error) => {
+      console.log("error",error?.response?.data);
     })
     // setVideos(response.data.items);
   }

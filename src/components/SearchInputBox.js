@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { SearchBarContainer, SearchBar, Label, Input, Button, InputContainer  } from "./SearchInputBox.style";
 import { SEARCH_CONSTANTS } from "../constants";
 
-const SearchInputBox = ( {handleSubmit}) => {
+const SearchInputBox = ({handleSubmit}) => {
   const [searchText, setSearchText] = useState('');
 
   const onSubmit = event => {
@@ -29,7 +29,7 @@ const SearchInputBox = ( {handleSubmit}) => {
               value={searchText}
               onChange={(event) => setSearchText(event.target.value)}
             />
-            <Button> Search </Button>
+            <Button>{SEARCH_CONSTANTS.SEARCH}</Button>
           </InputContainer>
         </div>
       </SearchBar>
