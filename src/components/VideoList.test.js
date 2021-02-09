@@ -44,7 +44,7 @@ describe("videoList", () => {
     expect(getByTestId('video-list')).toBeDefined();
   })
 
-  it.only("should not render loading text when there are no videos", () => {
+  it("should not render loading text when there are no videos", () => {
     const { queryByText } = render(<VideoList videos={[]} fetchMoreVideos={mockFetchMoreVideos}/>)
 
     expect(queryByText("Loading...")).not.toBeInTheDocument;

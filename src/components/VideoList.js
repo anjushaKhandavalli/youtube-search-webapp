@@ -14,7 +14,7 @@ return (
     <VideoListContainer data-testid="video-list">
       <InfiniteScroll
         dataLength={videos.length}
-        next={fetchMoreVideos}
+        next={videos.length > 0 ? fetchMoreVideos : () => {}}
         hasMore={true}
         loader={videos.length === 0 ? null : <h4>{LOADING}</h4>}
       >

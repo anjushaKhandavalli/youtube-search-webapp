@@ -10,8 +10,13 @@ const App = () => {
   const [nextPageToken, setNextPageToken] = useState('');
   const [searchText, setSearchText] = useState('');
 
+  const clearState = () => {
+    setVideos([]);
+    setNextPageToken('');
+    setSearchText('');
+  }
   const searchVideosFor = async (keyword) => {
-    console.log("videos searchVideosFor before apicall",videos);
+    clearState();
     const params = {
       q: keyword
     }
