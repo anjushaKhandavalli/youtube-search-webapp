@@ -1,10 +1,27 @@
 # Getting Started with Youtube search Web app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## About Youtube search app
 
 This app will let the users search for videos via keywords. It shows a list of matching results with video image/thumbnail, title and description of the video. This is a PWA app and supports infinite scrolling. 
+
+## Prerequisites
+
+> Visit [Youtube Documentation](https://developers.google.com/youtube/v3/getting-started#before-you-start) to create Google API Key
+
+> export REACT_APP_API_KEY=<Enter Your key>
+## Setup
+
+```
+git clone https://github.com/anjushaKhandavalli/youtube-search-webapp.git
+
+cd youtube-search-webapp
+
+yarn install
+
+```
+
+
 
 ## Available Scripts
 
