@@ -20,7 +20,6 @@ git clone https://github.com/anjushaKhandavalli/youtube-search-webapp.git
 cd youtube-search-webapp
 
 yarn install
-
 ```
 
 
