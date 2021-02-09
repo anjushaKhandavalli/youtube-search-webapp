@@ -7,9 +7,11 @@ This app will let the users search for videos via keywords. It shows a list of m
 
 ## Prerequisites
 
+> Please make sure of node version >=10.14.2
+
 > Visit [Youtube Documentation](https://developers.google.com/youtube/v3/getting-started#before-you-start) to create Google API Key
 
-> export REACT_APP_API_KEY=<Enter Your key>
+> export REACT_APP_API_KEY=<em>`<your API key>`</em>
 ## Setup
 
 ```
@@ -29,7 +31,7 @@ In the project directory, you can run:
 
 ### `yarn install`
 
-Installs the dependencies. Please make sure of node version >=10.14.2
+Installs the dependencies.
 
 ### `yarn start`
 
@@ -41,5 +43,5 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
